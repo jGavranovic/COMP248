@@ -14,7 +14,20 @@ public class PoS {
 //Two parameter constructor
   public PoS(Sales saleIn, PrePaiCard[] cardIn){
     sales = saleIn;
+    /*sales.setJunior(saleIn.getJunior());
+    sales.setTeen(saleIn.getTeen());
+    sales.setMedium(saleIn.getTeen());
+    sales.setBig(saleIn.getBig());
+    sales.setFamily(saleIn.getFamily());*/
+
     cards = cardIn;
+    /*cards = new PrePaiCard[cardIn.length];
+    for (int i=0;i<cardIn.length;i++){
+      cards[i].setType(cardIn[i].getType());
+      cards[i].setId(cardIn[i].getId());
+      cards[i].setDay(cardIn[i].getDay());
+      cards[i].setMonth(cardIn[i].getMonth());
+    }*/
   }
   //Method to check if money equal in two PoS
   public boolean moneyEquals(PoS pos){
