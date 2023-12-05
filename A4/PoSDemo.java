@@ -178,10 +178,10 @@ public class PoSDemo {
         else {
             System.out.println("(Enter number 0 to "+(poss[num].prePaidCardCount()-1)+"):");
             int cardNb = input.nextInt();
-            while (!(0<=num&&num<=poss[num].prePaidCardCount()-1)) {
-            System.out.println("Sorry but there is no "+"PrePaiCard"+" number "+num);
+            while (!(0<=cardNb&&cardNb<=poss[num].prePaidCardCount()-1)) {
+            System.out.println("Sorry but there is no "+"PrePaiCard"+" number "+cardNb);
             System.out.print(" --> Try again: (Enter number "+0+" to "+(poss[num].prePaidCardCount()-1)+"):");
-            num = input.nextInt();
+            cardNb = input.nextInt();
         }
             //Remove desired card from desired PoS
             poss[num].removeCard(cardNb);
@@ -204,7 +204,7 @@ public class PoSDemo {
         System.out.println("Which PrePaiCard do you want to update? (Enter number 0 to "+(poss[num].prePaidCardCount()-1)+"):");
         int cardNb = input.nextInt();
         while (!(0<=cardNb&&cardNb<=(poss[num].prePaidCardCount()-1))) {
-            System.out.println("Sorry but there is no PrePaidCard number "+num);
+            System.out.println("Sorry but there is no PrePaidCard number "+cardNb);
             System.out.print(" --> Try again: (Enter number 0 to "+(poss[num].prePaidCardCount()-1)+"):");
             cardNb = input.nextInt();
         }
