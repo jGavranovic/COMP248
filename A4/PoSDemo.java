@@ -232,7 +232,7 @@ public class PoSDemo {
         System.out.print("Enter 5 numbers seperated by a space): ");
         int jrNum = input.nextInt(),teenNum=input.nextInt(),medNum=input.nextInt(),bigNum=input.nextInt(),famNum=input.nextInt();
         //Print new money ammount while simultaneously updating each category
-        System.out.printf("You now have $%.1f%n", (float)poss[num].plusSales(jrNum,teenNum,medNum,bigNum,famNum));
+        System.out.printf("You now have $%.1f%n%n", (float)poss[num].plusSales(jrNum,teenNum,medNum,bigNum,famNum));
         }
     }
 
